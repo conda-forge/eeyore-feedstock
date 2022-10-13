@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - kanga >=0.0.19
+    - kanga >=0.0.20
     - numpy >=1.19.2
     - python >=3.6
     - pytorch-cpu
