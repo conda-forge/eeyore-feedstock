@@ -1,5 +1,6 @@
 {% set name = "eeyore" %}
 {% set version = "0.0.20" %}
+{% set python_min = "3.6" %}
 
 package:
   name: "{{ name|lower }}"
@@ -17,16 +18,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - kanga >=0.0.20
     - numpy >=1.19.2
-    - python >=3.6
+    - python >={{ python_min }}
     - pytorch-cpu
 
 test:
   imports:
     - eeyore
+  requires:
+    - python {{ python_min }}
 
 about:
   home: "https://github.com/papamarkou/eeyore"
