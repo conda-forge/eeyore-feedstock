@@ -24,7 +24,7 @@ requirements:
     - kanga >=0.0.20
     - numpy >=1.19.2
     - python >={{ python_min }}
-    - pytorch-cpu
+    - pytorch
 
 test:
   imports:
